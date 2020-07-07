@@ -2,9 +2,9 @@
 
 # Online/Offline Budget Tracker
 
-<img src="./public/img/fitness-tracker.png" alt="Project Screenshot" max-height="400px">
+<img src="./public/img/budget-tracker.png" alt="Project Screenshot" max-height="400px">
 
-> This application allows the user to log and view stats of the workouts and exercises they complete.
+> This progressive web application allows the user add expenses and deposits to their budget with or without a connection.
 
 #### [View The Site](https://nameless-woodland-78115.herokuapp.com) - The project is live.
 
@@ -25,11 +25,11 @@
 
 ## Description
 
-This application allows the user to log the workouts and the exercises included that they complete. By utilizing a mongoDB database the user is able to log each new workout and add the various exercises to each workout.
+This progressive web application allows the user to log budget deposits and expenses either with or without an internet connection.
 
-The user is able to select from 'resistance' & 'cardio' exercise types and the corresponding data types adjust to their selection. The user is able to start a workout, leave the application to perform their exercises, then return to log that exercise to the same workout.  In other words, the user does not need to keep the application open during their workouts.
+While connected, the user data is stored within a MongoDB database and includes the name of the transaction, the amount and the date and time.  
 
-The user is able to view stats of their workouts and exercises on a dashboard that allows the user to analyze and track their results.
+If the user loses connection or is out of internet service, the app will store the data within an IndexedDB database.  When the connection is restored the data will be populated to the MongoDB database.
 
 [Back To The Top](#project-name)
 
@@ -39,7 +39,7 @@ The user is able to view stats of their workouts and exercises on a dashboard th
 
 ![GitHub Top Language](https://img.shields.io/github/languages/top/nvalline/budget-tracker) ![GitHub language count](https://img.shields.io/github/languages/count/nvalline/budget-tracker)
 
-- Javascript, node.js, mongoDB, Express.js, HTML, CSS
+- Javascript, node.js, mongoDB, IndexedDB, Express.js, HTML, CSS
 
 [Back To The Top](#project-name)
 
@@ -57,11 +57,7 @@ Simply click the following link to load the application in your browser.
 
 ## How To Use
 
-Once the application is loaded in the browser, simply click the 'New Workout' button to create a workout and enter the first exercise.  
-
-Click either the 'Add Exercises' button if additional exercises are to be add to the workout or the 'Complete' button complete the workout.
-
-In the navigation bar, click 'Fitness Tracker' to return to the main page or 'Dashboard' to view the workout stats.
+Once the application is loaded in the browser, simply enter the name of the transaction in the first input field, enter the transaction amount in the second input field and select the appropriate button to either add or subtract the amount of the funds from your balance.
 
 [Back To The Top](#project-name)
 
