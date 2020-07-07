@@ -6,7 +6,7 @@
 
 > This progressive web application allows the user add expenses and deposits to their budget with or without a connection.
 
-#### [View The Site](https://nameless-woodland-78115.herokuapp.com) - The project is live.
+#### [View The Site](https://agile-sands-10651.herokuapp.com/) - The project is live.
 
 ---
 
@@ -49,7 +49,7 @@ If the user loses connection or is out of internet service, the app will store t
 
 Simply click the following link to load the application in your browser.
 
-#### [View The Site](https://nameless-woodland-78115.herokuapp.com) - The project is live.
+#### [View The Site](https://agile-sands-10651.herokuapp.com/) - The project is live.
 
 [Back To The Top](#project-name)
 
