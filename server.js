@@ -1,8 +1,10 @@
+// require dependencies
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
+// declare PORT
 const PORT = 3000;
 
 const app = express();
@@ -13,15 +15,17 @@ app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// set static pubilc folder for client side
 app.use(express.static("public"));
 
+// create mongoose connection
 mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
 });
 
-// routes
+// require routes
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
