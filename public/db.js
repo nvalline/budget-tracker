@@ -49,7 +49,6 @@ function checkDatabase() {
 };
 
 function saveRecord(record) {
-    console.log("RECORD:", record)
     const transaction = db.transaction(["pending"], "readwrite");
     const store = transaction.objectStore("pending");
 
